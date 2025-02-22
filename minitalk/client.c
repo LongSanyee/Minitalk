@@ -6,7 +6,7 @@
 /*   By: rammisse <rammisse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 12:44:28 by rammisse          #+#    #+#             */
-/*   Updated: 2025/02/20 20:39:39 by rammisse         ###   ########.fr       */
+/*   Updated: 2025/02/22 18:37:08 by rammisse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,8 @@ void	extractbits(int pid, char c)
 		else
 			kill(pid, SIGUSR1);
 		i--;
-		usleep(100);
+		usleep(200);
+		usleep(200);
 	}
 }
 
@@ -39,7 +40,7 @@ int	main(int ac, char **av)
 
 	if (ac != 3)
 	{
-		ft_printf("USAGE: ./client <PID> <MESSAGE>\n");
+		ft_putstr("USAGE: ./client <PID> <MESSAGE>\n");
 		return (0);
 	}
 	id = ft_atoi(av[1]);

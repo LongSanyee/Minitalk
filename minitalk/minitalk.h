@@ -6,7 +6,7 @@
 /*   By: rammisse <rammisse@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/17 12:44:41 by rammisse          #+#    #+#             */
-/*   Updated: 2025/02/20 20:42:16 by rammisse         ###   ########.fr       */
+/*   Updated: 2025/02/22 18:40:53 by rammisse         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,10 @@
 # include <signal.h>
 # include <stdlib.h>
 # include <limits.h>
-# include "./ft_printf/ft_printf.h"
+# include <unistd.h>
 
-int	ft_atoi(const char *str);
+int		ft_atoi(const char *str);
+void	ft_putnbr(int n);
+void	ft_putstr(char *str);
 
 #endif
